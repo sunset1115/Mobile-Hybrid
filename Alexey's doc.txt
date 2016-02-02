@@ -1,4 +1,4 @@
-Hello Vijay!
+Hello everyone!
 You can see my sample app.
 
 book-store is very useful hybrid app.
