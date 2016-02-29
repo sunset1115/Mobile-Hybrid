@@ -1,0 +1,11 @@
+<link href="css/responsive-calendar.css" rel="stylesheet">
+<ion-view title='<div alt="Brand" class="logoimg"></div>'>
+  <ion-content class="padding dash">
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    <div class="mysubtitle">所有</div>
+    <flex-calendar options="options" events="events"></flex-calendar>
+  </ion-content>
+</ion-view>

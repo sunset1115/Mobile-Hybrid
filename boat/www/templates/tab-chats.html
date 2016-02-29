@@ -1,0 +1,25 @@
+<ion-view class="chats" title='<div alt="Brand" class="logoimg"></div>'>
+  <div class="mysubtitle">
+    Please call 9876 5432 for any change.
+  </div>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right yacht-item-content" ng-repeat="yacht in yachts" isOdd="{{$odd}}" type="item-text-wrap" href="#">
+        <img ng-src="{{getImagePath(yacht.id)}}">
+        <div style="margin-top: 6px;">
+          <h2>{{yacht.boat_name}}</h2>
+          <p style="font-size: 15pt"> ${{yacht.boat_price}}/Days</p>
+          <p class="icon-part">
+          <div style="width:45vw;">
+            <div>{{yacht.boat_cap}}</div>
+            <div ><i class="icon ion-man person"></i></div>
+            <div ng-class="isShowIcon(yacht.boat_equip2)" class="icondiv" ><img src="img/singing.png"></div>
+            <div ng-class="isShowIcon(yacht.boat_equip3)" class="icondiv" style=""><img src="img/wifi.png"></div>
+            <div ng-class="isShowIcon(yacht.boat_equip4)" class="icondiv" style=""><img src="img/cook.png"></div>
+          </div>
+          </p>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

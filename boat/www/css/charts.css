@@ -1,0 +1,73 @@
+.chats .mysubtitle {
+  margin-top: 75px;
+  text-align: center;
+  font-size: large;
+}
+
+.yacht-item-content {
+  height: 120px !important;
+}
+
+.yacht-item-content:odd {
+  background-color: white !important;
+}
+
+.yacht-item-content .item-content{
+  padding-left: 45vw;
+  height: 110px !important;
+}
+
+.item-content img{
+  max-width: 35vw !important;
+  max-height: 110px !important;
+  border-radius: 0px !important;
+}
+
+.item p {
+  margin-top: 5px;
+  color: black !important;
+}
+
+.person {
+  top: 30px !important;
+  right: 33% !important;
+  float: right;
+}
+
+ion-item[isOdd='true'], ion-item[isOdd='true'] > a{
+  background-color: #EFEFEF !important;
+}
+
+.chats a p div{
+  float: left;
+}
+.chats .icondiv{
+  float:right !important;
+  margin-right: 3px !important;
+  background-color: #F16B1F;
+  border-radius: 100%;
+  margin-top: -25px !important;
+  width: 30px;
+  height: 30px;
+}
+
+.chats .icondiv:first-child{
+  margin-left: 50px !important;
+}
+
+.chats .icondiv img{
+  width: 30px;
+  height: 30px;
+  max-width: 30px !important;
+  min-width:30px !important;
+}
+
+.show-div{
+  visibility: visible;
+}
+
+.hide-div{
+  visibility: hidden;
+}
+
+

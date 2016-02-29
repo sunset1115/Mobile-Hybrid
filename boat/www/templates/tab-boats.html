@@ -1,0 +1,109 @@
+<ion-view class="boats" title='<div alt="Brand" class="logoimg"></div>'>
+  <ion-content>
+    <div class="container " ng-if="isShowed">
+    <div class="datepicker">
+      <div class="left-arrow ion-ios-arrow-back" ng-click="prevDate()"></div>
+      <div class="center">{{cur_date}}</div>
+      <div class="right-arrow ion-ios-arrow-forward" ng-click="nextDate()"></div>
+    </div>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="boat in boats" type="item-text-wrap" href="#">
+        <div class="forimg">
+          <img ng-src="{{boat.img_src}}">
+        </div>
+        <div class="status {{boat.cusClass}}">
+          <i class="item-icon-left i{{boat.cusClass}} {{boat.iconClass}}"></i>
+        </div>
+        <div class="thank">
+          <p style="font-size: 14pt"> {{boat.name}}</p>
+          <p>{{boat.ftime}} - {{boat.ttime}}</p>
+          <p>{{boat.fpos}} - {{boat.tpos}}</p>
+        </div>
+        <div style="height: 100%; margin-top: 30px; margin-left: 5px !important;"><i class="item-icon-right ion-android-more-horizontal myright"></i></div>
+        <ion-option-button class="button-stable ion-ios-paper"
+                           ng-click="edit($index)">
+        </ion-option-button>
+        <ion-option-button class="button-assertive ion-ios-trash-outline"
+                           ng-click="delete(boat.id)">
+        </ion-option-button>
+        <ion-option-button class="button-balanced ion-ios-telephone"
+                           ng-click="ring(boat.psrc)">
+        </ion-option-button>
+      </ion-item>
+      <ion-item class="foradditem" ng-click="edit(10000)">
+        Click Here to Add New Reservation
+      </ion-item>
+    </ion-list>
+    </div>
+    <div class="container" ng-hide="isShowed">
+      <div class="datepicker">
+        <div style="width:100%">
+          <div class="frontdiv ion-ios-sunny" ng-click="stoggle(true)"></div>
+          <div class="backdiv ion-ios-moon" ng-click="stoggle(false)"></div>
+        </div>
+        <div class="center1"><p>{{dayval}}</p><p>{{cur_date}}</p></div>
+      </div>
+      <ion-list>
+        <ion-item>
+          <h2>遊艇</h2>
+          <p>
+            <select ng-model="ship.boatname">
+            <option value="{{bb.boat_name}}" ng-repeat="bb in bdatas">{{bb.boat_name}}</option>
+          </select></p>
+        </ion-item>
+        <ion-item>
+          <h2>登船及地點時間</h2>
+          <p>
+            <i class="item-icon-left ion-ios-location pos"></i>
+            <select ng-init="ship.fposition" ng-model="ship.fposition" ng-options="option.id as option.newlocation for option in ldatas"></select>
+
+          </p>
+          <div>
+            <i class="item-icon-left ion-ios-clock pos"></i>
+            <!--<div class="fortimepicker" ion-datetime-picker ng-model="ship.fromtimeValue">{{ship.fromtimeValue| date: "yyyy-MM-dd H:mm:ss"}}</div>-->
+            <ionic-timepicker input-obj="ftimePickerObject">
+              <button class="button button-block button-light overflowShow fortime">
+                {{myftime}}
+              </button>
+            </ionic-timepicker>
+          </div>
+        </ion-item>
+        <ion-item>
+          <h2>下船及地點時間</h2>
+          <p>
+            <i class="item-icon-left ion-ios-location pos"></i>
+            <!--<select ng-model="ship.tposition">
+              <option value="{{ld.id}}" ng-repeat="ld in ldatas">{{ld.newlocation}}</option>
+            </select>-->
+            <select ng-init="ship.tposition" ng-model="ship.tposition" ng-options="option.id as option.newlocation for option in ldatas"></select>
+          </p>
+          <div>
+            <i class="item-icon-left ion-ios-clock pos"></i>
+            <ionic-timepicker input-obj="ttimePickerObject">
+              <!--<div class="fortimepicker" ng-model="ship.totimeValue">{{ship.ttime}}</div>-->
+              <button class="button button-block button-light overflowShow fortime">
+                {{myttime}}
+              </button>
+            </ionic-timepicker>
+
+            <!--<div class="fortimepicker" ion-datetime-picker ng-model="ship.totimeValue">{{ship.totimeValue| date: "yyyy-MM-dd H:mm:ss"}}</div>-->
+          </div>
+        </ion-item>
+        <ion-item style="padding-bottom: 5px !important;">
+          <h2>聯絡人</h2>
+          <p><input class="last" style="border:1px solid #9e9e9e; height: 25px;" type="text" ng-model="ship.contact"></p>
+          <div style="margin-top: 10px;">
+            Phone : <input type="text" ng-model="ship.phone" style="border: 1px solid grey;width: 200px;    display: inline;font-size: 17pt;"/>
+            <div class="forphone ion-ios-telephone" ng-click="ring(ship.phone)"></div>
+          </div>
+        </ion-item>
+        <ion-item class="lastitem">
+          <div align="center">
+            <p style="width: 100vw;text-align: left;font-size:14pt;padding-left:5px;">點擊以新增預約</p>
+            <button class="button button-energized" ng-click="register()">SAVE</button>
+          </div>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

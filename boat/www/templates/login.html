@@ -1,0 +1,38 @@
+<ion-view hide-nav-bar="true" ng-controller="LoginCtrl">
+  <ion-content class="padding login-body">
+	<div class="body_img">
+		<div class="login_wrap_mobile">
+			<img src="img/header/logo.png"><br>
+			<h1 style="color:white">Login</h1>
+			<input type="text" class="form-control" ng-model="user.username" placeholder="Username">
+			<input type="password" class="form-control" ng-model="user.pw" placeholder="Password">
+			<button class="btn firefly-login" ng-click="login(user)">Go</button>
+		</div>
+		<div class="login-wrap center">
+			<div>
+			<img src="img/header/logo.png" width="200px">
+			<div class="login-box">
+				<div class="login-box-inner">
+					<div class="top">Welcome!</div>
+					<div class="caption"><div class="hr"></div>Login<div class="hr"></div></div>
+					<div style="width:350px;">
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-10">
+								<input type="text" ng-model="user.username" class="form-control" placeholder="Username">
+								<input type="password" ng-model="user.pw" class="form-control" placeholder="Password">
+							</div>
+							<div class="col-md-2" style="margin-left: 25px;"></div>
+						</div>
+					</div>
+					<div class="hr_full"></div>
+					<div class="">
+						<button class="btn firefly-login" ng-click="login(user)" style="">Go</button>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>

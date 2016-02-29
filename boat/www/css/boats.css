@@ -1,0 +1,345 @@
+.boats {
+
+}
+.boats .has-header{
+  top: 76px;
+}
+
+.boats .datepicker{
+  height: 50px;
+  min-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boats .datepicker div{
+  height: 100%;
+  float: left;
+  font-size: 5vw;
+}
+.boats .datepicker .left-arrow, .boats .datepicker .right-arrow {
+  width:25%;
+  text-align: center;
+  height: 50px;
+  padding-top: 15px;
+}
+
+.boats .datepicker .center{
+  text-align: center;
+  width: 50%;
+}
+
+.boats .datepicker .center1{
+  text-align: center;
+  width: 100vw;
+  margin-top: 15px;
+  height: 70px;
+}
+
+.boats .item-content{
+  height: 100px;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.boats .item-content img{
+  max-width: 30vw !important;
+  max-height: 100px !important;
+  border-radius: 0px !important;
+  min-width: 30vw;
+  margin-top: 10px;
+}
+
+.boats .item p {
+  margin-top: 10px;
+  color: black !important;
+}
+
+.boats .person {
+  top: 30px !important;
+  margin-left: -40px !important;
+  right: 37vw !important;
+}
+
+.boats .pos {
+  top: 30px !important;
+  margin-left: -50px !important;
+  right: 37vw !important;
+  font-size: 14pt;
+}
+
+.boats .item a{
+  padding-left: 0px !important;
+  padding-right:0px !important;
+}
+.boats ion-item[isOdd='true'], ion-item[isOdd='true'] > a{
+  background-color: #EFEFEF !important;
+}
+
+.boats .item-content div{
+  float: left;
+  margin-left: 2px !important;
+}
+
+.boats .item-content .forimg{
+  max-width: 30vw !important;
+  max-height: 100px !important;
+  border-radius: 0px !important;
+  min-width: 30vw;
+  margin-top: 5px;
+}
+
+.boats .item-content .status{
+  width: 30px;
+  margin-left: 22vw;
+  margin-top: 25px;
+  padding: 4px;
+  padding-top: 0px;
+  margin-right: 10px;
+  border-radius: 100%;
+  height: 30px;
+}
+
+.day{
+  background-color: #F16B1F;
+}
+
+.boats .inight{
+  background-color: #0c60ee;
+  padding-left: 3vw !important;
+}
+
+.boats .item-content .status .inight{
+  font-size: 10vw;
+  padding: 0px !important;
+  color: white !important;
+}
+
+.boats .item-content .status .iday{
+  font-size: 10vw;
+  padding: 0px !important;
+  color: white !important;
+}
+
+.myright {
+  padding-right: 0px !important;
+}
+
+.boats .item-options .button{
+  font-size: 20pt;
+}
+
+.boats select{
+  min-width: 40vw;
+  margin-left: 10px;
+  height: 25px;
+}
+
+.boats select:first-child{
+  margin-left: 0px;
+}
+
+.boats select option{
+  min-width: 40%;
+  height: 25px;
+}
+
+.boats input{
+  margin-left:5px;
+  padding-top:0px !important;
+}
+
+.boats .last{
+  margin-left: 0px !important;
+}
+.boats .datepicker .frontdiv{
+  min-width:50%;
+  font-size:25pt;
+  color:#F16B1F;
+  padding-top:5px;
+}
+
+.boats .datepicker .backdiv{
+  min-width:50%;
+  font-size:25pt;
+  color:white;
+  padding-top:5px;
+  background-color: #0c60ee;
+}
+
+.boats .lastitem{
+  /*height:70px;*/
+  padding: 5px;
+}
+
+.boats .lastitem p{
+  margin-top: 0px;
+  height: 40px;
+}
+
+.boats .lastitem button{
+  max-height: 40px;
+  width: 80px;
+  min-width: 80px;
+  min-height: 40px;
+  color: #0c60ee;
+}
+
+.boats .fortimepicker{
+  display: inline-block;
+  width: 200px;
+  height: 25px;
+  border: 1px solid grey;
+  margin-left: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.boats .forphone{
+  float: right;
+  width: 40px;
+  height: 40px;
+  border: 1px solid darkgray;
+  display: inline-block;
+  color: darkgray;
+  font-size: 20pt;
+  border-radius: 100%;
+  padding-top: 7px;
+  margin-top: -10px;
+  padding-left: 10px;
+}
+
+.boats .thank{
+  /*margin-top: 15px;*/
+  font-size: 10pt;
+}
+
+.boats .thank p{
+  margin-top: 5px;
+  text-align: center;
+  font-size: 9pt;
+}
+
+.boats .foradditem{
+  text-align:center;
+  font-size: 14pt;
+  height: 90px !important;
+  padding-top: 30px;
+}
+
+.boats .fortime{
+  display: inline-block;
+  min-height: 30px;
+  min-width: 200px;
+  width: 200px;
+  color: #444;
+  border-color: grey;
+  line-height: 0px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+/*.boats .foradditem div{
+  text-align:center;
+  font-size: 17pt;
+  float: left;
+  width: 100%;
+
+}*/
+
+@media screen and (min-width: 481px) {
+  .boats .item-content img{
+    margin-top: 0px !important;
+    min-width: 140px;
+  }
+
+  .boats .item-content .forimg{
+    margin-top: 0px !important;
+    min-width: 140px;
+  }
+
+  .boats .item-content div{
+    float: left;
+  }
+
+  .boats .item-content .status{
+    float: left;
+    width: 50px;
+    margin-left: 10px !important;
+    margin-top: 25px;
+    padding-left: 5.5px;
+    border-radius: 25px;
+    height: 50px;
+  }
+
+  .boats .status .iday{
+    font-size: 45pt !important;
+  }
+
+  .boats .item-content .status .inight{
+    font-size: 45pt !important;
+    padding-left: 0px !important;
+    background-color: transparent;
+  }
+
+  .boats .item-content .thank{
+    float: left;
+  }
+
+  .boats .thank p{
+    font-size: 11pt;
+  }
+
+  .boats .thank p:first-child{
+    font-size: 15pt !important;
+  }
+
+  .boats .item-content div:last-child{
+    float:right !important;
+    margin-right: 10px;
+  }
+
+  .boats .fortimepicker{
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    border: 1px solid grey;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+
+  .boats .forphone{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border: 1px solid darkgray;
+    display: inline-block;
+    color: darkgray;
+    font-size: 20pt;
+    border-radius: 100%;
+    padding-top: 7px;
+    margin-top: -10px;
+    padding-left: 10px;
+  }
+
+  .boats .last{
+    margin-left: 0px !important;
+    height: 35px !important;
+    font-size: 14pt;
+  }
+
+  .boats select{
+    height: 35px !important;
+  }
+
+  .boats .foradditem{
+    text-align:center;
+    font-size: 17pt;
+    height: 120px !important;
+    padding-top: 50px;
+  }
+
+}
+
+

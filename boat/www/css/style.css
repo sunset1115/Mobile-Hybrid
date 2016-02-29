@@ -1,0 +1,127 @@
+/* Empty. Add your own CSS if you like */
+@import url('login.css');
+@import url('dash.css');
+@import url('charts.css');
+@import url('user.css');
+@import url('boats.css');
+.mynavbar{
+	background-color: #F16B1F !important;
+    border-color: #E7E7E7;
+    height: 70px;
+}
+
+.has-header {
+    top: 96px;
+}
+
+.navbar-toggle {
+	position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.menu-btn{
+	width: 40px;
+	height: 35px;
+    border: 1px solid #DEDDDD !important;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.header-item {
+  height: 70px !important;
+}
+
+.title img{
+  float: right;
+  margin-left: 30vw;
+  margin-right: 18vw;
+}
+.back-button {
+  margin-top: 10px !important;
+}
+
+.logoimg {
+  float: left;
+	width: 100%;
+  height: 65px;
+  background: url(../img/header/logo.png) no-repeat center;
+  color: #DEDDDD;
+}
+
+/*================= tabs part =================================*/
+
+.tabs {
+    background-color: #F16B1F !important;
+    bottom: 0px !important;
+    border-bottom: 0px !important;
+}
+
+.tab-item .icon{
+  margin-top: 5px;
+}
+
+/*
+.tabs .tab-item .icon.calc {
+  background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/img/foot-calendar.png');
+    background-size: contain;
+}
+
+.tabs .tab-item .icon.boat {
+  background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/img/foot-boat.png');
+    background-size: contain;
+}
+
+.tabs .tab-item .icon.setting {
+  background-repeat: no-repeat;
+    background-position: 50%;
+    height: 50%;
+    margin-top: 10px;
+    background-image: url('/img/foot-setting.png');
+    background-size: contain;
+}
+*/
+
+.tabs i{
+    margin-top:20px;
+  color:white;
+}
+
+.tab-item-active {
+  background-color: #ff9b03 !important;
+  color: white !important;
+  margin-top: -2px;
+  height: 49px;
+  border: 0px !important;
+}
+
+.mynavbar .showPlus{
+  color: white !important
+}
+
+.mynavbar .hidePlus{
+  color: #F16B1F !important
+}

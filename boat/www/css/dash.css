@@ -1,0 +1,98 @@
+﻿.dash .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dash .mysubtitle{
+  text-align: center;
+  font-size: large;
+}
+
+.dash .flex-calendar{
+  color: black;
+}
+
+.dash .flex-calendar .month{
+  background-color: #EFEFEF !important;
+}
+
+.dash .flex-calendar .week{
+  background-color: #EFEFEF !important;
+}
+
+.dash .flex-calendar .week .day:first-child{
+  color: red !important;
+}
+
+.dash .flex-calendar .days .day:first-child{
+  color: red !important;
+}
+
+.night.event:before{
+  background-color: gray !important;
+  padding-left: 6px !important;
+}
+
+.dash .flex-calendar .days .day.selected .number{
+  width: 25px !important;
+  line-height: 25px;
+  height: 25px !important;
+  /*margin-top: -20px;*/
+}
+
+.dash .flex-calendar .selected:before{
+  float: right !important;
+  margin-left: 8px !important;
+}
+
+@media screen and (min-width: 481px) {
+
+  .dash .flex-calendar {
+    color: black;
+    height: 500px;
+  }
+
+  .dash .mysubtitle {
+    margin-top: 70px;
+    font-size: 20pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  .dash .flex-calendar .month{
+    font-size: 18pt;
+  }
+
+  .dash .flex-calendar .week{
+    background-color: #EFEFEF !important;
+    font-size: 15pt;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .dash .flex-calendar .day{
+    font-size: 15pt;
+    min-height: 80px !important;
+  }
+
+  .night.event:before{
+    background-color: gray !important;
+    padding-left: 6px !important;
+  }
+
+  .dash .flex-calendar .days .day.selected .number{
+    width: 45px !important;
+    line-height: 35px;
+    height: 45px !important;
+    margin-top: -20px;
+    padding-top: 5px;
+  }
+
+  .dash .flex-calendar .selected:before{
+    margin-left: 20px !important;
+  }
+}
+
+
