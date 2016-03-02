@@ -1,0 +1,106 @@
+<ion-view view-title="<b>{{seed}}</b>in Toronto. ON" class="detail" hide-nav-bar="true">
+  <ion-header-bar class="searchbar bar-dark" ng-init="init()">
+    <div class="uprow">
+      <button class="button searchBtn ion-ios-search"></button>
+      <button class="button searchBtn ion-ios-location"></button>
+      <button class="button searchBtn ion-ios-location"></button>
+      <div class="forLabel">Asian Cuisine{{}}
+        <p>in Toronto ON</p>
+      </div>
+      <button class="button backBtn ion-android-arrow-back" ng-click="backState()"></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div id="mapdetail" data-tap-disabled="true"></div>
+    <div class="row">
+      <div class="col row-col-left">
+        <p class="pagetitle">Nohohon Tea Room</p>
+        <p>467 Queen St W, Toronto, ON, MSV 2A9</p>
+      </div>
+    </div>
+    <div class="row r1">
+      <div class="col-50">
+        <span class="foricon bar-energized ion-ios-telephone"></span>
+        <span>
+          416-603-2366
+        </span>
+      </div>
+      <div class="col-50">
+        <span class="foricon bar-energized ion-fork-repo"></span>
+        <span>
+          Get Directories
+        </span>
+      </div>
+    </div>
+    <div class="r2">
+      <div style="width:100vw; font-size: 13pt; display: block"> Description </div>
+      <div>
+        Nohohon Tea Room offers a healther alternative flavours for bubble tea enthusiasts! Keeping true to the
+        owner roots our green teas are imported from Japan...
+        <i class="icon-right ion-ios-play downarrow"></i>
+      </div>
+    </div>
+    <div class="row r3 hasborder" style="width:100vw;">
+      <div class="col-20 ion-ios-email"></div>
+      <div class="col-80">info@nohohon.ca</div>
+    </div>
+    <div class="row r3 hasborder" style="width:100vw;">
+      <div class="col-20 ion-android-desktop"></div>
+      <div class="col-80">info@nohohon.ca</div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p style="padding-left: 10px">Photo</p>
+        <p><div class="forstreet"></div></p>
+      </div>
+      <div class="col">
+        <p style="padding-left: 10px">Street View</p>
+        <p><div class="forstreet"></div></p>
+      </div>
+    </div>
+    <p style="font-size: 15pt;padding-left: 20px;">Opening Hours</p>
+    <ion-list class="forhour">
+      <ion-item ng-repeat="hr in hrs">
+        <div style="width: 30vw;font-size:13pt; float: left; text-align: left">{{hr.day}}</div>
+        <div style="width:50vw;font-size: 12pt; float: right; text-align: right">{{hr.hr}}</div>
+      </ion-item>
+    </ion-list>
+    <p style="margin: 5vw;">
+      Rate This Business
+    </p>
+    <div class="forrate">
+      <div class="hh">Rate This Business</div>
+      <ionic-ratings ratingsobj='ratingsObject'></ionic-ratings>
+    </div>
+    <p style="margin: 5vw;">
+      Methods of Payment
+    </p>
+    <div class="forpay row">
+      <div style="background: url('../img/master.png') no-repeat center"></div>
+      <div style="background: url('../img/visa.png') no-repeat center"></div>
+      <div style="background: url('../img/cash.png') no-repeat center"></div>
+      <div style="background: url('../img/int.png') no-repeat center"></div>
+    </div>
+    <p style="margin: 5vw;">
+      Languages
+    </p>
+    <div class="forlang row">
+      <li> English</li>
+    </div>
+    <div class="row r1" style="margin-top: 10px;">
+      <div class="col-50">
+        <span class="foricon bar-energized ion-ios-telephone"></span>
+        <span>
+          416-603-2366
+        </span>
+      </div>
+      <div class="col-50">
+        <span class="foricon bar-energized ion-fork-repo"></span>
+        <span>
+          Get Directories
+        </span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

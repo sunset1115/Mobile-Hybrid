@@ -1,0 +1,19 @@
+<ion-view hide-nav-bar="true" ng-controller="FavoriteMainCtrl">
+  <ion-header-bar class="bar-dark head">
+    <i style="font-size: 18pt;margin-top:10px;" class="ion-android-arrow-back button-dark" ng-click="backState()"></i>
+    <button style="margin-right: 0px; margin-left: 85%;transform: rotate(90deg);" class="button button-icon button-clear ion-ios-more" menu-toggle="right">
+    </button>
+
+  </ion-header-bar>
+  <ion-content class="ccc">
+    <div class="row leisure" ng-repeat="row in rows">
+      <div class="col">
+        <div style="font-size: 15pt; width:100%">
+          <div style="float: left; width: 60%">{{row.head}}</div>
+          <div style="float: right; width:40%">{{row.tel}}</div>
+        </div>
+        <div style="display: block">{{row.des}}</div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

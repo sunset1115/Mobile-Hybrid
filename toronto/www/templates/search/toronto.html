@@ -1,0 +1,174 @@
+<ion-view view-title="<b>{{seed}}</b>in Toronto. ON" class="toronto" hide-nav-bar="true">
+  <ion-header-bar class="searchbar bar-dark">
+    <div class="uprow">
+      <button class="button searchBtn ion-ios-search"></button>
+      <button class="button searchBtn ion-ios-location"></button>
+      <div class="forLabel">Asian Cuisine{{}}
+        <p>in Toronto ON</p>
+      </div>
+      <button class="button backBtn ion-android-arrow-back" ng-click="backState()"></button>
+    </div>
+    <div class="downrow">
+      <div class="forResult">500 Results</div>
+      <div class="forRefine">Refine</div>
+      <div class="ion-ios-arrow-forward" style="float: left;margin-right: 3px;"></div>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="row foritem" ng-repeat="row in rows" ng-click="showMapModal($index)">
+      <div class="col row-col-first" style="background: url('../img/piza.png') no-repeat center;">
+      </div>
+      <div class="col row-col-center">
+        <p>{{row.title}}</p>
+        <p>{{row.des}}</p>
+        <p class="forrating"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></p>
+      </div>
+      <div class="col row-col-last">
+        <div class="row-center" style="width:100%; border-bottom: 1px solid gainsboro">
+          <span class="row foricon bar-energized ion-ios-telephone"></span>
+          <span class="row" style="font-size: 9pt;text-align: center;padding: 0px;padding-left: 40%;">
+            Call
+          </span>
+        </div>
+        <div class="row-center"><span class="row foricon bar-energized ion-fork-repo"></span>
+          <span class="row" style="font-size: 9pt;text-align: center;padding: 0px;padding-left: 10%;">
+            Get Directories
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row foractiveitem">
+      <div class="col row-col-first">
+      </div>
+      <div class="col row-col-center">
+        <p>Honeybee Restau...</p>
+        <p>2028 Queen St E, Toronto,...</p>
+        <p class="forrating"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></p>
+      </div>
+      <div class="col row-col-last">
+        <div class="row-center" style="width:100%; border-bottom: 1px solid gainsboro">
+          <span class="row foricon bar-energized ion-ios-telephone"></span>
+          <span class="row" style="font-size: 9pt;text-align: center;padding: 0px;padding-left: 40%;">
+            Call
+          </span>
+        </div>
+        <div class="row-center"><span class="row foricon bar-energized ion-fork-repo"></span>
+          <span class="row" style="font-size: 9pt;text-align: center;padding: 0px;padding-left: 10%;">
+            Get Directories
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row foritem" ng-repeat="row in lrows">
+      <div class="col row-col-first" style="background: url('../img/piza.png') no-repeat center;">
+      </div>
+      <div class="col row-col-center">
+        <p>{{row.title}}</p>
+        <p>{{row.des}}</p>
+        <p class="forrating"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></p>
+      </div>
+      <div class="col row-col-last">
+        <div class="row-center" style="width:100%; border-bottom: 1px solid gainsboro">
+          <span class="row foricon bar-energized ion-ios-telephone"></span>
+          <span class="row" style="font-size: 9pt;text-align: center;padding: 0px;padding-left: 40%;">
+            Call
+          </span>
+        </div>
+        <div class="row-center"><span class="row foricon bar-energized ion-fork-repo"></span>
+          <span class="row" style="font-size: 9pt;text-align: center;padding: 0px;padding-left: 10%;">
+            Get Directories
+          </span>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+
+<script id="hint-popup.html" type="text/ng-template">
+  <ion-modal-view class="map-modal">
+    <ion-header-bar class="bar bar-subheader bar-dark searchbar" ng-init="init()">
+      <div class="uprow">
+        <button class="button searchBtn ion-navicon-round" style="background-color: white !important;color:black"></button>
+        <button class="button searchBtn ion-ios-search" ng-click="detail()"></button>
+        <div class="forLabel">Asian Cuisine{{}}
+          <p>in Toronto ON</p>
+        </div>
+        <button class="button backBtn ion-android-arrow-back" ng-click="backModalState(true)"></button>
+      </div>
+      <div class="downrow">
+        <div class="forResult">500 Results</div>
+        <div class="forRefine">Refine</div>
+        <div class="ion-ios-arrow-forward" style="float: left;margin-right: 3px;"></div>
+      </div>
+    </ion-header-bar>
+    <ion-content class="popup-body">
+      <div id="map" data-tap-disabled="true"></div>
+      <div class="row foractiveitem">
+        <div class="col row-col-first" style="background: url('../img/piza.png') no-repeat center;">
+        </div>
+        <div class="col row-col-center">
+          <p>{{selrow.title.substr(0,14) + '...'}}</p>
+          <p>{{selrow.des.substr(0,18) + '...'}}</p>
+          <p class="forrating"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></p>
+        </div>
+        <div class="col row-col-last">
+          <div class="row-center" style="width:100%; border-bottom: 1px solid gainsboro">
+            <span class="row l1 foricon bar-energized ion-ios-telephone"></span>
+          <span class="row r1" style="font-size: 9pt;text-align: center;padding: 0px;">
+            Call
+          </span>
+          </div>
+          <div class="row-center l2"><span class="row foricon bar-energized ion-fork-repo"></span>
+          <span class="row r2" style="font-size: 9pt;text-align: center;padding: 0px;">
+            Get Directories
+          </span>
+          </div>
+        </div>
+      </div>
+    </ion-content>
+  </ion-modal-view>
+</script>
+<script id="detail-popup.html" type="text/ng-template">
+  <ion-modal-view class="map-detail-modal">
+    <ion-header-bar class="bar bar-subheader bar-dark searchbar">
+      <div class="uprow">
+        <button class="button searchBtn ion-navicon-round" style="background-color: white !important;color:black"></button>
+        <button class="button searchBtn ion-ios-search"></button>
+        <div class="forLabel">Asian Cuisine{{}}
+          <p>in Toronto ON</p>
+        </div>
+        <button class="button backBtn ion-android-arrow-back" ng-click="backState()"></button>
+      </div>
+      <div class="downrow">
+        <div class="forResult">500 Results</div>
+        <div class="forRefine">Refine</div>
+        <div class="ion-ios-arrow-forward" style="float: left;margin-right: 3px;"></div>
+      </div>
+    </ion-header-bar>
+    <ion-content class="popup-body">
+      <div id="map" data-tap-disabled="true"></div>
+      <div class="row foractiveitem">
+        <div class="col row-col-first" style="background: url('../img/piza.png') no-repeat center;">
+        </div>
+        <div class="col row-col-center">
+          <p>{{selrow.title.substr(0,14) + '...'}}</p>
+          <p>{{selrow.des.substr(0,18) + '...'}}</p>
+          <p class="forrating"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></p>
+        </div>
+        <div class="col row-col-last">
+          <div class="row-center" style="width:100%; border-bottom: 1px solid gainsboro">
+            <span class="row l1 foricon bar-energized ion-ios-telephone"></span>
+          <span class="row r1" style="font-size: 9pt;text-align: center;padding: 0px;">
+            Call
+          </span>
+          </div>
+          <div class="row-center l2"><span class="row foricon bar-energized ion-fork-repo"></span>
+          <span class="row r2" style="font-size: 9pt;text-align: center;padding: 0px;">
+            Get Directories
+          </span>
+          </div>
+        </div>
+      </div>
+    </ion-content>
+  </ion-modal-view>
+</script>

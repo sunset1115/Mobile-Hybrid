@@ -1,0 +1,57 @@
+<ion-view  view-title="Near <b>Toronto, ON</b>" ng-controller="SearchMainCtrl" class="search">
+  <ion-header-bar class="bar-energized subhead">
+    <div class="uprow">
+      <label class="item item-input" style="width: 70vw;">
+        <i class="ion-ios-search"></i>
+        <input type="search" ng-change="showSearch();" ng-model="toronto.searchtxt" class="icon ion-ios-search" placeholder="Search"/>
+      </label>
+      <button class="button searchBtn" ng-click="search()">SEARCH</button>
+    </div>
+    <div class="downrow">
+      <label class="item item-input">
+        <i class="icon-left ion-ios-location"></i>
+        <input type="search" ng-model="toronto.seed" placeholder="Toronto. ON"/>
+      </label>
+    </div>
+  </ion-header-bar>
+  <ion-content class="mysearch" ng-show="isSearchResult">
+    <div class="row" ng-repeat="item in cat_items">
+      <div class="col cat-col" ng-repeat="dd in item">
+        <div>
+          <img src="{{dd.iurl}}"/>
+        </div>
+        <div>{{dd.name}}</div>
+      </div>
+    </div>
+    <div class="row"><div style="width:100%;text-align: right;margin-top: 5px; color:deepskyblue" ng-click="showMore()">SEE MORE</div></div>
+    <div class="row">
+      <div class="col" style="text-align: center;font-size:5vw;">LEISURE</div>
+    </div>
+    <div class="row leisure" ng-repeat="lei_item in leisure">
+      <div class="col" ng-repeat="lis in lei_item">
+        <div style="margin-bottom: 10px;border-bottom: 2px solid #d6d6d6">
+          <img src="{{lis.face}}"/>
+        </div>
+        <div class="lei-img">
+          <i class="icon {{lis.iconClass}}"></i>
+        </div>
+        <div>
+          <p>{{lis.des}}</p>
+          <p>{{lis.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="row"><div style="width:100%;text-align: right;margin-top: 5px; color:deepskyblue">SEE MORE</div></div>
+    <div class="row">
+      <div class="col" style="text-align: center;font-size:5vw;">DINE</div>
+    </div>
+  </ion-content>
+  <ion-content class="search-result" ng-hide="isSearchResult">
+    <ion-list>
+      <ion-item menu-close class="dis-item" ng-repeat="titem in search_results | filter:toronto.searchtxt " href="#/search/main/{{titem}}">
+        <div style="font-size:14pt">{{titem.toronto}}</div>
+        <div style="font-size:10pt;color: #aaaaaa;">{{titem.address}}</div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

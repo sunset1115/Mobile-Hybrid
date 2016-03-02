@@ -15,4 +15,7 @@ Boat is boat rental for HongKong.
 The owner of boat managed his boat.
 This app is connected to server by using the REST api.
 
+Toronto is Ionic design for searching shop.
+In this app, there are 7 responsive page for restaurant,etc in toronto city.
+
 Thank you. Best regards.

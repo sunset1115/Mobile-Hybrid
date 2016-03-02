@@ -1,0 +1,45 @@
+.menu{
+  background-color: #444444;
+  width: 80vw;
+}
+
+.menu .login{
+  width: 275px;
+  height: 180px;
+}
+
+.menu .login .face{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  background-color: rgb(245, 244, 243);
+  margin-top: 50px;
+  border-radius: 100%;
+  font-size: 70pt;
+  padding-top: 10px;
+  padding-left: 32px;
+  color: #b2b2b2;
+}
+
+.menu .login .name{
+  color: white;
+  margin: 0 auto;
+  width: initial;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18pt;
+}
+
+.menu .item{
+  /*height: 70px;*/
+  background-color: #444444;
+  border-color: #444444;
+  color: white;
+  font-size: 16pt;
+}
+
+.menu .item span{
+  margin-left: 30px;
+  font-size: 13pt;
+}
+

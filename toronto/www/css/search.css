@@ -1,0 +1,808 @@
+/* for search template */
+
+.searchmain{
+
+}
+
+.searchmain .thank{
+
+}
+
+/* =============================== main page =====================================*/
+
+.searchmain .search .subhead{
+  height: 96px !important;
+  max-width: 100vw;
+  top: 44px !important;
+}
+
+.searchmain .search .subhead .uprow, .searchmain .thank .subhead .downrow{
+  display: block;
+  width: 95vw;
+}
+
+.uprow .searchBtn{
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  background-color: rgba(56, 55, 55, 0.39);
+  color:black;
+}
+
+.subhead .uprow input{
+  width: 70vw;
+  height:34px;
+  padding: 0px 5px;
+
+}
+.subhead .downrow{
+  position: absolute;
+  float: left;
+  top: 50px;
+  left: 5px;
+}
+
+.subhead .uprow .button{
+  float: right;
+}
+
+.subhead .downrow input{
+  width: 95vw;
+  height:34px;
+  padding: 0px 5px;
+}
+
+.subhead .item-input{
+  padding: 0px 10px;
+}
+.search .topnav{
+  top: -140px;
+}
+
+.searchmain .tabs{
+  top: 140px !important;
+}
+
+.searchmain .tabs .tab-item-active{
+  border-bottom: 2px solid darkgreen;
+  color: black;
+}
+
+.searchmain .has-header{
+  top: 186px !important;
+}
+
+.map-modal .uprow .searchBtn{
+  position: relative !important;
+}
+
+.search .cat-col{
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  -moz-box-shadow:    inset 0 0 5px rgba(0,0,0,0.4);
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+  box-shadow:         inset 0 0 5px rgba(0,0,0,0.4);
+  background-color: white;
+  border-radius: 3px;
+}
+
+.search .cat-col div:first-child{
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  margin:0 auto;
+}
+
+
+
+.search .leisure .col{
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  -moz-box-shadow:    inset 0 0 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+  box-shadow:         inset 0 0 3px rgba(0,0,0,0.4);
+  background-color: white;
+  border-radius: 3px;
+}
+
+.search .leisure img{
+  width: 40vw;
+  background-size: cover;
+}
+
+.search .leisure .formark{
+  width: 100%;
+  height: 160px;
+  background-size: 100% 100% !important;
+}
+
+.lei-img{
+  border: 1px solid #d6d6d6;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin-top: -28px;
+  margin-left: 19vw;
+  position: relative;
+  background: white;
+  padding-top: 5px;
+  color:deepskyblue;
+  font-size:15pt;
+}
+
+.search .discover .dis-item{
+  padding-left: 35px;
+  padding-bottom: 8px;
+}
+
+/* =============== toronto page part ============================ */
+.toronto{
+
+}
+
+.toronto .has-header{
+  top: 110px !important;
+
+}
+
+.toronto .bar-header{
+  top: 0px !important;
+  height: 110px;
+  padding: 0px !important;
+}
+.toronto .searchbar .uprow{
+  height: 70px;
+  padding:10px;
+}
+
+.toronto .downrow div{
+  font-size: 14pt;
+}
+.toronto .searchbar .downrow .forResult{
+  width: 70vw;
+  float:left;
+}
+
+.toronto .searchbar .downrow .forRefine{
+  width: 20vw;
+  float:left;
+  text-align:right;
+  padding-right: 5px;
+}
+.toronto .searchbar .uprow, .search .searchbar .downrow{
+  display: block;
+  width: 100vw;
+}
+
+.toronto .searchbar .backBtn{
+  float: right;
+  font-size: 20pt;
+  margin-right: 14px;
+  margin-top: 10px;
+}
+
+.toronto .searchbar .uprow .searchBtn{
+  float: right;
+  top: 0px;
+  margin-right: 15px;
+  background-color: rgba(56, 55, 55, 0.39);
+  color:white;
+  font-size: 20pt;
+  margin-top: 10px;
+}
+
+.toronto .searchbar .forLabel{
+  float: right;
+  margin-top: 0px;
+  width: 50vw;
+  min-width: 200px;
+  font-size: 16pt;
+  margin-top: 10px;
+}
+
+.toronto .forLabel p{
+  font-size: 9pt;
+}
+.toronto .searchbar .downrow{
+  position: absolute;
+  float: left;
+  top: 70px;
+  width: 100vw;
+  left: 0px;
+  background-color: #4b8bf4;
+  height: 40px;
+  padding: 10px !important;
+  color: #e7e7e7;
+}
+
+.toronto .searchbar .uprow .button{
+  float: right;
+  position: relative;
+}
+
+.toronto .searchbar .downrow input{
+  width: 95vw;
+  height:34px;
+  padding: 0px 5px;
+}
+
+/*==== list part ===*/
+.toronto .foritem{
+  height: 80px;
+  border: 1px solid #d6d6d6;
+  margin: 2%;
+  width: 96%;
+  -moz-box-shadow:    inset 0 0 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+  box-shadow:         inset 0 0 3px rgba(0,0,0,0.4);
+  border-radius: 4px;
+}
+
+.toronto .foritem div{
+  padding: 2px !important;
+}
+
+.toronto .foritem div p{
+  margin: 0px !important;
+}
+
+.toronto .foritem div p:first-child{
+  font-size: 14pt;
+  color: #11c1f3;
+}
+
+.toronto .foritem .row-col-first,.toronto .foritem .row-col-last {
+  width: 0%;
+  max-width: 0;
+  min-height: 80px;
+}
+
+.toronto .foritem .row-col-center{
+  width: 100%;
+  max-width: 100%;
+  min-height: 80px;
+}
+
+.toronto .foractiveitem{
+  background-color: #e2ecf0;
+  height: 120px;
+  max-height: 120px;
+  min-height: 120px;
+  border: 1px solid #d6d6d6;
+  margin: 2%;
+  width: 96%;
+  -moz-box-shadow:    inset 0 0 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+  box-shadow:         inset 0 0 3px rgba(0,0,0,0.4);
+  border-radius: 4px;
+}
+.toronto .foractiveitem .row-col-first,.toronto .foritem .row-col-last {
+  width: 20%;
+  min-width: 60px;
+  max-width: 60px;
+  margin-top: 5px;
+}
+
+.toronto .foractiveitem .row-col-first{
+  background: url("../img/location1.png") no-repeat center;
+  background-size: contain;
+}
+
+.toronto .foractiveitem .row-col-last{
+  width: 30%;
+  max-width: 30%;
+}
+
+.toronto .foritem .row-col-last{
+  width: 30%;
+  max-width: 30%;
+}
+
+.toronto .foritem .row-col-first, .toronto .foritem .row-col-last{
+  min-width: 0px !important;
+  max-width: 0px !important;
+  display: none;
+}
+
+.toronto .foractiveitem .row-col-center{
+  width: 50%;
+  max-width: 50%;
+  min-height: 100px;
+  border-right: 1px solid #d6d6d6;
+  padding-top: 10px !important;
+  padding-left: 4px !important;
+}
+
+.toronto .foractiveitem .foricon{
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 15px;
+  padding: 8px;
+  font-size: 14pt;
+  margin: 0 auto;
+}
+
+.toronto .foractiveitem .row-col-last .row-center{
+  height: 55px;
+  padding-top: 5px;
+}
+
+.toronto .forrating div{
+  text-align: left !important;
+}
+
+.toronto .foritem div .ion-ios-star{
+  color: #ffc900 !important;
+}
+
+.toronto .forrating div .ionic_rating_icon_off{
+  color: #999999 !important;
+}
+
+.toronto .foractiveitem div p{
+  margin: 0px !important;
+  margin-top: 5px !important;
+}
+
+.toronto .foractiveitem div p:first-child{
+  font-size:14pt;
+  color: #11c1f3;
+}
+
+/*========= for modal window ==============*/
+.formodal{
+
+}
+
+.formodal .popup, .formadal .map-modal{
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px !important;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.popup-body{
+  padding:0px !important;
+}
+
+.map-modal .bar-subheader {
+  top: 0px;
+  display: block;
+  height: 110px;
+}
+
+.map-modal .searchbar .uprow{
+  height: 70px;
+  padding:10px;
+}
+
+.map-modal .downrow div{
+  font-size: 14pt;
+}
+.map-modal .searchbar .downrow .forResult{
+  width: 70vw;
+  float:left;
+}
+
+.map-modal .searchbar .downrow .forRefine{
+  width: 20vw;
+  float:left;
+  text-align:right;
+  padding-right: 5px;
+}
+.map-modal .searchbar .uprow, .search .searchbar .downrow{
+  display: block;
+  width: 100vw;
+}
+
+.map-modal .searchbar .backBtn{
+  float: right;
+  font-size: 20pt;
+  margin-right: 14px;
+  margin-top: 10px;
+}
+
+.map-modal .searchbar .uprow .searchBtn{
+  float: right;
+  top: 0px;
+  margin-right: 15px;
+  background-color: rgba(56, 55, 55, 0.39);
+  color:white;
+  font-size: 20pt;
+  margin-top: 10px;
+}
+
+.map-modal .searchbar .forLabel{
+  float: right;
+  margin-top: 0px;
+  width: 50vw;
+  min-width: 200px;
+  font-size: 16pt;
+  margin-top: 10px;
+}
+
+.map-modal .forLabel p{
+  font-size: 9pt;
+}
+.map-modal .searchbar .downrow{
+  position: absolute;
+  float: left;
+  top: 70px;
+  width: 100vw;
+  left: 0px;
+  background-color: #4b8bf4;
+  height: 40px;
+  padding: 10px !important;
+  color: #e7e7e7;
+}
+
+.map-modal .searchbar .uprow .button{
+  float: right;
+}
+
+.formadal .searchbar .downrow input{
+  width: 95vw;
+  height:34px;
+  padding: 0px 5px;
+}
+
+.scroll {
+  height: 100%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-modal .row{
+  position: absolute;
+  top: 60%;
+  background-color: #ccc;
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+.map-modal .foractiveitem{
+  background-color: #e2ecf0;
+  height: 120px;
+  max-height: 120px;
+  min-height: 120px;
+  border: 1px solid #d6d6d6;
+  margin: 2%;
+  width: 96%;
+  -moz-box-shadow:    inset 0 0 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+  box-shadow:         inset 0 0 3px rgba(0,0,0,0.4);
+  border-radius: 4px;
+}
+.map-modal .foractiveitem .row-col-first,.toronto .foritem .row-col-last {
+  width: 20%;
+  min-width: 60px;
+  max-width: 60px;
+  margin-top: 5px;
+}
+
+.map-modal .foractiveitem .row-col-first{
+  background: url("../img/location1.png") no-repeat center;
+  background-size: contain;
+}
+
+.map-modal .foractiveitem .row-col-last{
+  width: 30%;
+  max-width: 30%;
+}
+
+.map-modal .foritem .row-col-last{
+  width: 30%;
+  max-width: 30%;
+}
+
+.map-modal .foritem .row-col-first, .toronto .foritem .row-col-last{
+  min-width: 0px !important;
+  max-width: 0px !important;
+  display: none;
+}
+
+.map-modal .foractiveitem .row-col-center{
+  width: 50%;
+  max-width: 50%;
+  min-height: 100px;
+  border-right: 1px solid #d6d6d6;
+  padding-top: 10px !important;
+  padding-left: 4px !important;
+}
+
+.map-modal .foractiveitem .foricon{
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 15px;
+  padding: 8px;
+  font-size: 14pt;
+  margin: 0 auto;
+}
+
+.map-modal .foractiveitem .row-col-last .row-center{
+  height: 55px;
+  padding-top: 5px;
+}
+
+.map-modal .forrating div{
+  text-align: left !important;
+}
+
+.map-modal .foritem div .ion-ios-star{
+  color: #ffc900 !important;
+}
+
+.map-modal .forrating div .ionic_rating_icon_off{
+  color: #999999 !important;
+}
+
+.map-modal .foractiveitem div p{
+  margin: 0px !important;
+  margin-top: 5px !important;
+}
+
+.map-modal .foractiveitem div p:first-child{
+  font-size:14pt;
+  color: #11c1f3;
+}
+
+.map-modal .foractiveitem .row-col-first,.toronto .foritem .row-col-last {
+  width: 20%;
+  min-width: 60px;
+  max-width: 60px;
+  margin-top: 5px;
+}
+
+.map-modal .foractiveitem .row-col-first{
+  background: url("../img/location1.png") no-repeat center;
+  background-size: contain;
+}
+
+.map-modal .foractiveitem .row-col-last{
+  width: 30%;
+  max-width: 30%;
+}
+
+.map-modal .foractiveitem .row-col-last .l1{
+  top: 0px;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+.map-modal .foractiveitem .row-col-last .l2{
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+.map-modal .foractiveitem .row-col-last .r1{
+  top: 30px;
+  margin-top: 5px;
+  margin-left: 40px;
+  background-color: transparent;
+}
+.map-modal .foractiveitem .row-col-last .r2{
+  margin-top: 25px;
+  margin-left: -30px;
+  background-color: transparent;
+}
+
+/*===================== discover page =========================*/
+
+.discover{
+
+}
+
+.discover .has-header{
+  top: 110px !important;
+
+}
+
+.discover .bar-header{
+  top: 0px !important;
+  height: 110px;
+  padding: 0px !important;
+}
+.discover .searchbar .uprow{
+  height: 70px;
+  padding:10px;
+}
+
+.discover .searchbar .downrow div{
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  float:left;
+}
+
+.discover .searchbar .uprow, .search .searchbar .downrow{
+  display: block;
+  width: 100vw;
+}
+
+.discover .searchbar .backBtn{
+  float: right;
+  font-size: 20pt;
+  margin-right: 14px;
+  margin-top: 10px;
+}
+
+.discover .searchbar .uprow .searchBtn{
+  float: right;
+  top: 0px;
+  margin-right: 15px;
+  background-color: rgba(56, 55, 55, 0.39);
+  color:white;
+  font-size: 20pt;
+  margin-top: 10px;
+}
+
+.discover .searchbar .forLabel{
+  float: right;
+  margin-top: 0px;
+  width: 50vw;
+  min-width: 200px;
+  font-size: 16pt;
+  margin-top: 10px;
+}
+
+.discover .forLabel p{
+  font-size: 9pt;
+}
+.discover .searchbar .downrow{
+  position: absolute;
+  float: left;
+  top: 70px;
+  width: 100vw;
+  left: 0px;
+  background-color: #444;
+  height: 40px;
+  padding: 10px !important;
+  color: #e7e7e7;
+}
+
+.discover .searchbar .uprow .button{
+  float: right;
+  position: relative;
+}
+
+.discover .searchbar .downrow input{
+  width: 95vw;
+  height:34px;
+  padding: 0px 5px;
+}
+
+/*==== list part ===*/
+.discover .foritem{
+  height: 80px;
+  border: 1px solid #d6d6d6;
+  margin: 2%;
+  width: 96%;
+  -moz-box-shadow:    inset 0 0 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+  box-shadow:         inset 0 0 3px rgba(0,0,0,0.4);
+  border-radius: 4px;
+}
+
+.discover .foritem div{
+  padding: 2px !important;
+}
+
+.discover .foritem div p{
+  margin: 0px !important;
+}
+
+.discover .foritem div p:first-child{
+  font-size: 14pt;
+  color: #11c1f3;
+}
+
+.discover .foritem .row-col-first,.discover .foritem .row-col-last {
+  width: 0%;
+  max-width: 0;
+  min-height: 80px;
+}
+
+.discover .foritem .row-col-center{
+  width: 100%;
+  max-width: 100%;
+  min-height: 80px;
+}
+
+.discover .foractiveitem{
+  background-color: #e2ecf0;
+  height: 120px;
+  max-height: 120px;
+  min-height: 120px;
+  border: 1px solid #d6d6d6;
+  margin: 2%;
+  width: 96%;
+  -moz-box-shadow:    inset 0 0 3px rgba(0,0,0,0.4);
+  -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.4);
+  box-shadow:         inset 0 0 3px rgba(0,0,0,0.4);
+  border-radius: 4px;
+}
+.discover .foractiveitem .row-col-first,.discover .foritem .row-col-last {
+  width: 20%;
+  min-width: 60px;
+  max-width: 60px;
+  margin-top: 5px;
+}
+
+.discover .foractiveitem .row-col-first{
+  background: url("../img/location1.png") no-repeat center;
+  background-size: contain;
+}
+
+.discover .foractiveitem .row-col-last{
+  width: 30%;
+  max-width: 30%;
+}
+
+.discover .foritem .row-col-last{
+  width: 30%;
+  max-width: 30%;
+}
+
+.discover .foritem .row-col-first, .discover .foritem .row-col-last{
+  min-width: 0px !important;
+  max-width: 0px !important;
+  display: none;
+}
+
+.discover .foractiveitem .row-col-center{
+  width: 50%;
+  max-width: 50%;
+  min-height: 100px;
+  border-right: 1px solid #d6d6d6;
+  padding-top: 10px !important;
+  padding-left: 4px !important;
+}
+
+.discover .foractiveitem .foricon{
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  border-radius: 15px;
+  padding: 8px;
+  font-size: 14pt;
+  margin: 0 auto;
+}
+
+.discover .foractiveitem .row-col-last .row-center{
+  height: 55px;
+  padding-top: 5px;
+}
+
+.discover .forrating div{
+  text-align: left !important;
+}
+
+.discover .foritem div .ion-ios-star{
+  color: #ffc900 !important;
+}
+
+.discover .forrating div .ionic_rating_icon_off{
+  color: #999999 !important;
+}
+
+.discover .foractiveitem div p{
+  margin: 0px !important;
+  margin-top: 5px !important;
+}
+
+.discover .foractiveitem div p:first-child{
+  font-size:14pt;
+  color: #11c1f3;
+}
+
+
