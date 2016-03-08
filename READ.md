@@ -1,21 +1,30 @@
-Hello everyone!
-You can see my sample app.
+#Hello everyone!#
+Welcome to you!
 
-book-store is very useful hybrid app.
-This is a user's little libray.
+There are some Hybrid app for Mobile in this repository.
+This repo is for sunset.co
 
-And WheatherApp is my first Hybrid app.
-This is based on Ionic.
+#book-store#
+  This is very useful hybrid app.
+  This is a user's little libray in Phone.
 
-And Ekiosk_H is Hybrid app of ekioskmobile.net site.
-This is developed by using Node.js and Google Polymer.
-This is runned grunt-server.
+#WheatherApp#
+  This is my first Hybrid app.
+  This is based on Ionic.
 
-Boat is boat rental for HongKong.
-The owner of boat managed his boat.
-This app is connected to server by using the REST api.
+#Ekiosk_H#
+  This is Hybrid app of ekioskmobile.net site.
+  This is developed by using Node.js and Google Polymer.
+  
+#Boat#
+  This is boat rental app for HongKong.
+  The owner of boat managed his boat.
+  This app is connected to server by using the REST api.
 
-Toronto is Ionic design for searching shop.
-In this app, there are 7 responsive page for restaurant,etc in toronto city.
+#Toronto#
+  This is Ionic design for searching shop at Toronto City.
+  In this app, there are 7 responsive page for restaurant, shop, hospital, etc.
 
 Thank you. Best regards.
+
+Alexey && Leonid
