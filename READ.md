@@ -26,5 +26,3 @@ This repo is for sunset.co
   In this app, there are 7 responsive page for restaurant, shop, hospital, etc.
 
 Thank you. Best regards.
-
-Alexey && Leonid
