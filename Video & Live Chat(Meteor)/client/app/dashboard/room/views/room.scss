@@ -1,0 +1,41 @@
+.dashboard .main-content {
+  padding-top: 0px;
+  height: auto;
+}
+
+.small-player {
+  position: absolute;
+  z-index: 2;
+}
+
+.user-video video {
+  width: 160px;
+  height: 120px;
+  margin-right: 0px;
+}
+.video-wrapper.user-video {
+  height: 180px;
+}
+.partner-video video {
+  width: 600px;
+  height: 450px;
+}
+
+.user-panel button {
+  margin-bottom: 15px;
+}
+
+.conversation {
+  margin-botton: 10px;
+  height: 80vh;
+  overflow: scroll;
+  border: 1px solid;
+}
+
+#start {
+  margin-bottom: 0;
+}
+
+li {
+  text-align: left;
+}

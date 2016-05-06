@@ -1,0 +1,40 @@
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Hello {{ getCurrentUser().name }}</h1>
+    </div>
+    <div class="col-sm-12">
+      <form class="form" name="form" ng-submit="submit(form)" novalidate>
+
+        <div class="form-group">
+          <label>What's your native language?</label>
+
+          <select ng-options="item.code as item.name for item in languages" ng-model="native"></select>
+
+        </div>
+
+        <div class="form-group">
+          <label>What language do you want to learn?</label>
+
+          <select ng-options="item.code as item.name for item in languages" ng-model="learning"></select>
+
+        </div>
+
+        <div class="form-group">
+        <label>Update My Introduction</label>
+        <input type='text'>
+        </div>
+        
+
+        <div>
+          <button class="btn btn-inverse btn-lg btn-login" type="submit">
+            Submit
+          </button>
+        </div>
+        
+
+      </form>
+    </div>
+  </div>
+  
+

@@ -1,0 +1,32 @@
+
+<div style="padding: 0px; padding-top: 0px;">
+  <span ng-hide="error">
+  </span>
+  <br>
+  <span ng-bind="error"></span>
+</div>
+
+<div class="row">
+  <div class='col-md-9'>
+    <video class='col-md-3 small-player' ng-src="{{localVideo}}" autoplay muted></video>
+    <video class="col-md-12" ng-src="{{peer.stream}}" autoplay></video>
+  </div>
+
+  <div class="col-md-3">
+    <i class="glyphicon glyphicon-volume-off" ng-hide='muted' ng-click='toggleAudio()'></i>
+    <i class="glyphicon glyphicon-volume-up" ng-show='muted' ng-click='toggleAudio()'></i>
+    <i class="glyphicon glyphicon-eye-close" ng-hide='cameraOff' ng-click='toggleVideo()'></i>
+    <i class="glyphicon glyphicon-eye-open" ng-show='cameraOff' ng-click='toggleVideo()'></i>
+    <div class='conversation'>
+      <ul id="msgs" class="list-unstyled"></ul>
+    </div>
+    
+    <div class="form-group form-inline">
+      <form ng-submit='sendMsg()'>
+        <input type="text" class="form-control input-lg" name="msg" placeholder="Send message in" ng-model='msg'>
+        <select class='btn btn-default btn-lg' ng-options="language.language for language in targetLanguages" ng-model="targetLanguage"></select>
+        <input type="submit" name="send" id="send" value="Send" class="btn btn-primary btn-lg">
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,223 @@
+.dashboard {
+  position: relative;
+
+  .main-content {
+    padding-top: 30px;
+    height: auto;
+  }
+
+  .main-content.theater {
+    width: 100%;
+  }
+
+  .sidePanel {
+    background-color: $dashboard-primary;
+    color: white;
+    padding: 0px;
+
+
+    h4 {
+      text-align: center;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    a:hover {
+      color: $dashboard-primary;
+    }
+
+    li.active {
+      a {
+        color: $dashboard-primary;
+        background-color: #eee;
+      }
+    }
+  }
+
+  .leftPanel {
+    -webkit-transition: visibility linear 1.0s;
+    transition: visibility linear 1.0s;
+  }
+
+  .rightPanel {
+    -webkit-transition: visibility linear 1.0s;
+    transition: visibility linear 1.0s;
+
+    a:hover {
+      cursor: pointer;
+    }
+
+    li a {
+      height: 70px;
+      font-size: 18px;
+      line-height: 16px;
+
+      .partner-text-col {
+        padding-top: 5px;
+      }
+      
+      span {
+        font-size: 14px;
+      }
+      
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .rightPanel.hideRight {
+    display: none;
+  }
+
+  .leftPanel.hideLeft {
+    display: none;
+  }
+}
+
+#pButton{
+  background: #03a65a;
+}
+
+#slowButton.orange {
+  background-color: #fd8a18;
+}
+
+.play {
+  background-size: 50% 50%;
+  background-position: center;
+  height:60px; 
+  width: 60px;
+  border: none;
+}
+#slowButton {
+  background-color: #fbdc2c;
+  font-size: 17px;
+}
+
+#pButton.red {
+  background: #db475f;
+}
+
+button {
+  outline: 0;
+}
+
+#timeline{
+  width: 100%;
+  height: 20px;
+  background: #888;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+ 
+#playhead{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 1px;
+  background: $brand-primary;
+}
+
+.comment-row {
+  width: 100%;
+  height: 150px;
+  padding-top: 50px;
+  position: relative;
+}
+
+#comment-text {
+  margin: 0px;
+}
+
+.comment {
+  position: absolute;
+  top: 0px;
+  width: 6px;
+  height: 10px;
+  background-color: $brand-primary;
+}
+
+.comment:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+  top: 0px;
+  margin: 0px auto;
+}
+
+
+
+#loader 
+{ fill: #888 }
+
+#border 
+{ fill: $brand-primary; }
+
+#center-circle, #top-circle,
+{ fill: #888; }
+
+#larger-circle 
+{ fill: #000; }
+
+#larger-circle:hover {
+  fill: #444;
+  cursor: pointer;
+}
+#border:hover {
+  cursor: pointer;
+}
+#marker-edit {
+  fill: #396CFF; 
+}
+.marker:hover {
+  fill: $brand-primary;
+  cursor: pointer;
+}
+.circle-play {
+  display: block;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+.control-overlay {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 100px;
+  left: 175px;
+  z-index: 999;
+}
+
+.marker-panel {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.comment-one {
+  margin-top: 75px;
+}
+
+.comment-two {
+  margin-top: 75px;
+}
+
+.cancel-mark {
+  margin-top: 15px;
+}
+
+.mark-start {
+  margin-top: 20px;
+
+}
+
+.marker-panel button {
+  margin-top: 50px;
+}

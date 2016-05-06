@@ -1,0 +1,67 @@
+
+<div class="container-fluid siteFont">
+<div class="well wellColor">Language Partner Recommendations</div>
+<table class="table table-hover">
+  <thead>
+    <td class="col-md-1"><h4></h4></td>
+    <td class="col-md-1"><h4>Name</h4></td>
+    <td class="col-md-2"><h4>Native Languages</h4></td>
+    <td class="col-md-2"><h4>Learning</h4></td>
+  </thead>
+  <tbody class="overViewFont">
+    <tr ng-repeat="partner in suggestedPartners" ng-click='viewProfile(partner)'>
+      <td class='col-md-1'><img ng-src="{{partner.pic}}"/></td>
+      <td class='col-md-1'><h4>{{partner.name}}</h4></td>
+      <td class='col-md-2'>
+        <h4><span ng-repeat='nativeLanguage in partner.nativeLanguages'> {{nativeLanguage}} </span></h4>
+      </td>
+      <td class='col-md-2'>
+        <h4><div ng-repeat='language in partner.languagesLearning'> {{language.language}} </div></h4>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class='well wellColor'>Your Messages</div>
+<div class = 'message' ng-repeat="message in messages track by message._id | orderBy : sortMessage : true">
+  <div class="row" ng-click='markSeen(message); messageFormOpen = !messageFormOpen' ng-class='{seen: message.seen, unseen: !message.seen}'>
+    <div class='col-md-4'>
+      <h4 ng-show="message.type === 'normal'">New message from {{message.from.name}}</h4>
+      <h4 ng-show="message.type === 'requestAccept'">{{message.from.name}} has accepted your partner request!</h4>
+      <h4 ng-show="message.type === 'partnerRequest'">New partner request from {{message.from.name}}</h4>
+    </div>
+    <div class='col-md-5'>
+      <h4>{{message.body | limitTo:20}}</h4>
+    </div>
+    <div class='col-md-3'>
+      <h4 ng-bind="message.timestamp | date:'MM/dd/yyyy hh:mma'">{{message.timestamp}}</h4>
+    </div>
+  </div>
+  <div class="row message-content" ng-show = 'messageFormOpen'>
+    <div class='col-md-6'>
+      <p>{{message.body}}</p>
+    </div>
+    <div class='col-md-6'>
+        <form class="form" name="acceptForm" ng-submit="acceptRequest(acceptForm, message._partnership, responseText)" ng-show='message.type === "partnerRequest"' novalidate>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea type="text" name="acceptText" class="form-control" ng-model="responseText" required></textarea>
+          </div>
+          <div class="form-group has-error">
+            <p class="help-block" ng-show="acceptForm.acceptText.$error.required && submitted">
+              Please include a message in your partner acceptance  
+            </p>
+            <p class="help-block">{{ errors.other }}</p>
+          </div>
+          <button class="btn btn-inverse btn-md btn-login" type="submit">
+            Accept
+          </button>
+          <a class="btn btn-default btn-md btn-register" ng-click='viewProfile(message.from)'>
+            View Profile
+          </a>
+        </form>
+        <button class="btn btn-default btn-large" ng-show="message.type === 'requestAccept' || message.type === 'normal'" ng-click='seePartnership(message._partnership)'>
+          Reply
+        </button>
+    </div>
+  </div>
+</div>
